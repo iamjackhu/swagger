@@ -8,15 +8,23 @@
 	<packaging>pom</packaging>
 	<name>swagger :: Parent</name>
 
+	<properties>
+		<swagger.version>2.7.0</swagger.version>
+	</properties>
+
 	<modules>
-	<module>swagger-hub</module>
-	<module>swagger-ui</module>
-	<module>swagger-spec</module>
-	<module>swagger-core</module>
+		<module>swagger-hub</module>
+		<module>swagger-spec</module>
+		<module>swagger-core</module>
+		<module>swagger-springboot</module>
 	</modules>
 
 	<dependencies>
-		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
 	</dependencies>
 </project>
 
